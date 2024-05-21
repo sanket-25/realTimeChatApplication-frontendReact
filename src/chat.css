@@ -1,0 +1,102 @@
+/* src/index.css */
+
+/* Apply some basic global styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Chat window styling */
+#chat-window {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message bubbles styling */
+.message-bubble {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  line-height: 1.5;
+}
+
+.message-bubble.user-message {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.message-bubble.other-message {
+  background-color: #e9ecef;
+  color: black;
+  align-self: flex-start;
+}
+
+.message-bubble .user-id {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #dee2e6;
+  background-color: white;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* chat.css */
+
+.message-bubble {
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 60%;
+  border-radius: 10px;
+  word-break: break-word;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.other-message {
+  background-color: #f1f0f0;
+  color: black;
+  align-self: flex-start;
+}
+
+#chat-window {
+  display: flex;
+  flex-direction: column;
+}
