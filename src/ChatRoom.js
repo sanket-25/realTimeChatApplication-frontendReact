@@ -21,7 +21,7 @@ function ChatRoom({ user, setUser }) {
 
   useEffect(() => {
     // Create WebSocket connection.
-    const socket = new WebSocket('ws://localhost:5000');
+    const socket = new WebSocket('ws://real-time-chat-application-backend.vercel.app');
 
     // Connection opened
     socket.onopen = () => {
